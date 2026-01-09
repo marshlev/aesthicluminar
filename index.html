@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Forums - NOVELTY</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #eef1f4;
+    color: #2b2b2b;
+    font-size: 14px;
+}
+
+/* TOP BAR */
+.top-bar {
+    background: #2f80ed;
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    font-size: 13px;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(#2e7d32, #1b5e20);
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #9cffb2;
+}
+
+.auth {
+    font-size: 13px;
+    color: #d1fae5;
+}
+
+/* NAV */
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.nav-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    gap: 18px;
+}
+
+.nav-inner a {
+    color: #2e7d32;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-inner a:hover {
+    text-decoration: underline;
+}
+
+/* TAG BAR */
+.tags {
+    background: linear-gradient(#c8f7d2, #e7fbe9);
+    padding: 10px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.tags-inner {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tag {
+    display: inline-block;
+    background: #ffffff;
+    border: 1px solid #b7e4c7;
+    color: #1b5e20;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 3px;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 13px;
+    color: #666;
+}
+
+/* LAYOUT */
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 15px;
+}
+
+/* CARD */
+.card {
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 15px;
+}
+
+.card-header {
+    background: #1b5e20;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.card-body {
+    padding: 12px;
+}
+
+/* FORUM ROW */
+.forum-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 100px 180px;
+    gap: 10px;
+    padding: 12px;
+    border-top: 1px solid #eee;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.forum-row:hover {
+    background: #f3faf5;
+}
+
+.forum-icon {
+    width: 32px;
+    height: 32px;
+    background: #43a047;
+    border-radius: 6px;
+}
+
+.forum-title {
+    font-weight: 500;
+    color: #1b5e20;
+}
+
+.forum-desc {
+    font-size: 12px;
+    color: #666;
+}
+
+.forum-stats {
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+}
+
+.forum-last {
+    font-size: 12px;
+    color: #555;
+}
+
+/* CATEGORY HEADER */
+.category {
+    background: #145a32;
+    color: #ffffff;
+    padding: 8px 12px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* SIDEBAR */
+.sidebar .card-header {
+    background: #145a32;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #666;
+}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+    SERVER ONLINE • xxx.xxx.xxx.xxx:7777
+</div>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">NOVELTY ROLEPLAY</div>
+        <div class="auth">Sign In • Register</div>
+    </div>
+</header>
+
+<div class="navbar">
+    <div class="nav-inner">
+        <a href="#">Home</a>
+        <a href="#">Forums</a>
+        <a href="#">Rules</a>
+        <a href="#">UCP</a>
+        <a href="#">Support</a>
+    </div>
+</div>
+
+<div class="tags">
+    <div class="tags-inner">
+        <span class="tag">Roleplay</span>
+        <span class="tag">SA-MP 0.3.7</span>
+        <span class="tag">Indonesia</span>
+        <span class="tag">Community Driven</span>
+    </div>
+</div>
+
+<div class="breadcrumb">
+    Home › Forums
+</div>
+
+<div class="wrapper">
+
+    <!-- MAIN -->
+    <div>
+
+        <!-- CHATBOX -->
+        <div class="card">
+            <div class="card-header">Chatbox</div>
+            <div class="card-body">
+                Chatbox temporarily unavailable.
+            </div>
+        </div>
+
+        <!-- CATEGORY 1 -->
+        <div class="card">
+            <div class="category">Server Information</div>
+
+            <div class="forum-row">
+                <div class="forum-icon"></div>
+                <div>
+                    <div class="forum-title">Announcements</div>
+                    <div class="forum-desc">Update, maintenance, dan informasi resmi</div>
+                </div>
+                <div class="forum-stats">42<br>Posts</div>
+                <div class="forum-last">Admin<br>Today</div>
+            </div>
+
+            <div class="forum-row">
+                <div class="forum-icon"></div>
+                <div>
+                    <div class="forum-title">Server Rules</div>
+                    <div class="forum-desc">Peraturan roleplay & komunitas</div>
+                </div>
+                <div class="forum-stats">Pinned</div>
+                <div class="forum-last">Staff<br>Updated</div>
+            </div>
+        </div>
+
+        <!-- CATEGORY 2 -->
+        <div class="card">
+            <div class="category">Roleplay & Community</div>
+
+            <div class="forum-row">
+                <div class="forum-icon"></div>
+                <div>
+                    <div class="forum-title">General Discussion</div>
+                    <div class="forum-desc">Diskusi umum seputar server</div>
+                </div>
+                <div class="forum-stats">1.2K</div>
+                <div class="forum-last">Player<br>Today</div>
+            </div>
+
+            <div class="forum-row">
+                <div class="forum-icon"></div>
+                <div>
+                    <div class="forum-title">Faction & Organization</div>
+                    <div class="forum-desc">Diskusi dan informasi faction resmi</div>
+                </div>
+                <div class="forum-stats">318</div>
+                <div class="forum-last">Leader<br>Yesterday</div>
+            </div>
+        </div>
+
+        <!-- CATEGORY 3 -->
+        <div class="card">
+            <div class="category">Support Center</div>
+
+            <div class="forum-row">
+                <div class="forum-icon"></div>
+                <div>
+                    <div class="forum-title">Player Support</div>
+                    <div class="forum-desc">Masalah akun, login, atau gameplay</div>
+                </div>
+                <div class="forum-stats">Open</div>
+                <div class="forum-last">Support<br>Now</div>
+            </div>
+
+            <div class="forum-row">
+                <div class="forum-icon"></div>
+                <div>
+                    <div class="forum-title">Bug Reports</div>
+                    <div class="forum-desc">Laporkan bug dan issue server</div>
+                </div>
+                <div class="forum-stats">Tracking</div>
+                <div class="forum-last">Dev<br>Today</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <div class="card">
+            <div class="card-header">Server Status</div>
+            <div class="card-body">
+                Mode: Roleplay<br>
+                Players: 128 / 300<br>
+                Uptime: Stable
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Quick Links</div>
+            <div class="card-body">
+                Register Account<br>
+                User Control Panel<br>
+                Discord Community
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Recent Activity</div>
+            <div class="card-body">
+                New faction application<br>
+                Bug report resolved<br>
+                Event announcement
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+© 2026 NOVELTY<br>
+Not affiliated with Rockstar Games
+</footer>
+
+</body>
+</html>
